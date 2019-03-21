@@ -1,4 +1,4 @@
-package fastlanesampleproject.experion.com.otpverificationusingapi.BroadcastReceiver;
+package fastlanesampleproject.experion.com.otpverificationusingapi.broadcastreceiver;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -10,7 +10,7 @@ import com.google.android.gms.auth.api.phone.SmsRetriever;
 import com.google.android.gms.common.api.CommonStatusCodes;
 import com.google.android.gms.common.api.Status;
 
-import fastlanesampleproject.experion.com.otpverificationusingapi.Activity.MainActivity;
+import fastlanesampleproject.experion.com.otpverificationusingapi.activity.MainActivity;
 public class SmsReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {

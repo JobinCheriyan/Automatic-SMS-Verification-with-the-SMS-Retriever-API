@@ -1,4 +1,4 @@
-package fastlanesampleproject.experion.com.otpverificationusingapi.Helper;
+package fastlanesampleproject.experion.com.otpverificationusingapi.helper;
 
 import android.content.Context;
 import android.content.ContextWrapper;

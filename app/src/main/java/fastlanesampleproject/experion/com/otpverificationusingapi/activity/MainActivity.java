@@ -1,4 +1,4 @@
-package fastlanesampleproject.experion.com.otpverificationusingapi.Activity;
+package fastlanesampleproject.experion.com.otpverificationusingapi.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
