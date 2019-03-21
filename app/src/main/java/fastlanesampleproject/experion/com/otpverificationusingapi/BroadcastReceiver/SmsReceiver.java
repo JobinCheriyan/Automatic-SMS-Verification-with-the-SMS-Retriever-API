@@ -1,4 +1,4 @@
-package fastlanesampleproject.experion.com.otpverificationusingapi;
+package fastlanesampleproject.experion.com.otpverificationusingapi.BroadcastReceiver;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -10,6 +10,7 @@ import com.google.android.gms.auth.api.phone.SmsRetriever;
 import com.google.android.gms.common.api.CommonStatusCodes;
 import com.google.android.gms.common.api.Status;
 
+import fastlanesampleproject.experion.com.otpverificationusingapi.Activity.MainActivity;
 public class SmsReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
@@ -37,7 +38,7 @@ public class SmsReceiver extends BroadcastReceiver {
             }
         }
     }
-
+/* getting OTP from the message received*/
     private String getVerificationCode(String message) {
         String verificationCode = null;
         int indexStart = message.indexOf(":");

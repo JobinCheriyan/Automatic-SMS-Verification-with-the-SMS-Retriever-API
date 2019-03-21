@@ -1,4 +1,4 @@
-package fastlanesampleproject.experion.com.otpverificationusingapi;
+package fastlanesampleproject.experion.com.otpverificationusingapi.Helper;
 
 import android.content.Context;
 import android.content.ContextWrapper;
@@ -12,7 +12,8 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.Arrays;
-
+/* use the code to generate the 11 characters hash string of the app
+* call the method  getAppSignatures() in Activity and print the value of base64Hash to get the 11 character hash string*/
 public class AppSignatureHelper extends ContextWrapper {
     public static final String TAG = AppSignatureHelper.class.getSimpleName();
 
@@ -26,6 +27,7 @@ public class AppSignatureHelper extends ContextWrapper {
 
     /**
      * Get all the app signatures for the current package
+     *
      * @return
      */
     public ArrayList<String> getAppSignatures() {
@@ -65,7 +67,7 @@ public class AppSignatureHelper extends ContextWrapper {
             base64Hash = base64Hash.substring(0, NUM_BASE64_CHAR);
 
             Log.d(TAG, String.format("pkg: %s -- hash: %s", packageName, base64Hash));
-            System.out.println("the hash"+base64Hash);
+            System.out.println("the hash" + base64Hash);
             return base64Hash;
         } catch (NoSuchAlgorithmException e) {
             Log.e(TAG, "hash:NoSuchAlgorithm", e);
